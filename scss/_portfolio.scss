@@ -1,0 +1,201 @@
+/*=== PORTFOLIO HOVER === */
+.s-portfolio-image {
+  background-color: black;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.s-portfolio-image img {
+  display: block;
+}
+
+.portfolio-overlay-filter {
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 30%;
+  transition: opacity 0.5s ease-in 0s;
+}
+
+.s-portfolio-image:hover .portfolio-overlay-filter {
+  opacity: 0.6;
+}
+
+.portfolio-overlay-button {
+  height: 4em;
+  width: 2em;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.5em;
+}
+
+.portfolio-overlay-button a {
+  height: 58px;
+  width: 58px;
+  padding-left: 3px;
+  padding-right: 4px;
+  border-radius: 50%;
+  background-color: #fd6632;
+  text-align: center;
+  color: white;
+  color: white;
+  font-size: 3em;
+  line-height: 50px;
+  text-decoration: none;
+  display: block;
+}
+
+.portfolio-overlay-button a:hover {
+  background-color: #0b9ce0;
+}
+
+.first-level-hover-wrapper .portfolio-overlay-button {
+  transition: all 0.5s ease-in 0.5s;
+  top: -60px;
+}
+
+.first-level-hover-wrapper .item-wrapper:hover .portfolio-overlay-button {
+  top: 40%;
+}
+
+.b-orange,
+.b-orange-first {
+  background-color: #fd6632;
+  color: white;
+}
+
+.b-black {
+  background-color: #252629;
+  color: white;
+}
+
+.s-portfolio-filter-links {
+  width: 60%;
+  margin: 0.3em auto;
+}
+
+.s-portfolio-filter-links:hover {
+  background-color: #fd6632;
+  color: white;
+}
+
+.f-light {
+  font-weight: 300;
+}
+
+.th-title {
+  background-color: #7e3319;
+  font-size: 1.75rem;
+}
+
+.td-btn {
+  background-color: #be4c25;
+}
+
+.btn:hover {
+  background-color: #0b9ce0;
+  color: white;
+}
+
+.f-bold {
+  font-weight: 700;
+}
+
+.f-font-paragraph {
+  font-size: 1em;
+}
+
+.f-large {
+  font-size: 2em;
+}
+
+.f-small-line-height {
+  line-height: 0.5;
+}
+
+.f-price {
+  font-weight: 400;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+.f-team {
+  font-size: 1.5em;
+  line-height: 0.1;
+  margin: 0.5em 0;
+}
+
+.f-client {
+  color: #fd6632;
+}
+
+.logo {
+  background-color: #fd6632;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.logo:hover {
+  background-color: #0b9ce0;
+}
+
+.underline {
+  border-bottom: solid 2px #fd6632;
+}
+
+.btn {
+  background-color: #fd6632;
+  color: white;
+  font-size: 0.65em;
+  box-shadow: none;
+  border: none;
+  padding: 0.3em 1em;
+  margin: 0.3em auto;
+}
+
+.slider {
+  display: block;
+}
+
+.slider-break {
+  display: none;
+}
+
+progress {
+  width: 90%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.75em;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #3a3a3a;
+}
+
+progress::-webkit-progress-value {
+  background-color: #fd6632;
+}
+
+.s-progress-paragraph {
+  text-align: left;
+  margin-left: 5%;
+  line-height: 0.1;
+  margin-bottom: 0.1em;
+  margin-top: 2em;
+}
+
+.s-progress-question-text {
+  margin-top: 5em;
+}
+
+.contact-btn {
+  height: 3em;
+}

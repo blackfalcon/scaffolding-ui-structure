@@ -1,0 +1,158 @@
+/*=== LAYOUT === */
+
+.nav-toggle {
+  position: fixed;
+  left: 0;
+  width: 1em;
+  height: 1.25em;
+  font-size: 2em;
+  margin: 0.5em;
+  transition: left 0.3s ease;
+}
+
+.nav-toggle:before {
+  content: "☰";
+}
+
+.trigger {
+  position: fixed;
+  top: 0;
+  left: 15em;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.l-nav {
+  position: fixed;
+  left: -15em;
+  width: 15em;
+  height: 100%;
+  background: #2e2e2e;
+  opacity: 0.95;
+  transition: left 0.3s ease;
+}
+
+.page-wrapper {
+  position: relative;
+  right: 0;
+  transition: right 0.3s ease;
+}
+
+.mobileNavToggle {
+  display: none;
+}
+
+.mobileNavToggle:checked ~ .l-nav {
+  left: 0;
+}
+
+.mobileNavToggle:checked ~ .icon-menu {
+  left: 15em;
+}
+
+.mobileNavToggle:checked ~ .trigger {
+  pointer-events: auto;
+}
+
+.mobileNavToggle:checked ~ .page-wrapper {
+  right: -15em;
+}
+
+/*=== DIVOTS === */
+.b-orange::before {
+  display: block;
+  height: 4em;
+  content: " ";
+  background-color: white;
+  margin-top: -2.1em;
+  clip-path: polygon(50% 60%, 40% 0, 60% 0);
+}
+
+.b-white::before {
+  display: block;
+  height: 4em;
+  content: " ";
+  background-color: #fd6632;
+  margin-top: -2.1em;
+  clip-path: polygon(50% 60%, 40% 0, 60% 0);
+}
+
+.b-black::before {
+  display: block;
+  height: 4em;
+  content: " ";
+  background-color: white;
+  margin-top: -2.1em;
+  clip-path: polygon(50% 60%, 40% 0, 60% 0);
+}
+
+.b-black-white::before {
+  display: block;
+  height: 4em;
+  content: " ";
+  background-color: #252629;
+  margin-top: -2.1em;
+  clip-path: polygon(50% 60%, 40% 0, 60% 0);
+}
+
+.l-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.l-flex-item {
+  text-align: center;
+  margin: auto;
+  max-width: 85%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.l-flex-contact {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.l-flex-child {
+  margin-bottom: 10%;
+}
+
+.l-flex-child-p {
+  margin-top: 10%;
+}
+
+.l-flex-prices {
+  width: 80%;
+  margin: auto;
+}
+
+.l-slider {
+  max-width: 100%;
+}
+
+.l-client {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+.l-client-item {
+  max-width: 85%;
+  order: 2;
+  text-align: center;
+  margin: auto;
+}
+
+.l-footer {
+  margin-bottom: 5%;
+  margin-top: 2%;
+}

@@ -1,0 +1,58 @@
+/*=== FORM === */
+input[type='text'] {
+  color: map-get($text-input, color);
+  font-size: map-get($text-input, font-size) + map-get($text-input, border-color);
+}
+
+label {
+  display: inline-block;
+}
+
+input, textarea {
+  height: 3em;
+  width: 80%;
+  font-size: 0.8rem;
+  color: white;
+  border: 1px solid #7e3218;
+  margin-bottom: 5%;
+  background-color: #7e3218;
+  padding: 0 0.7em;
+  display: inline;
+}
+
+.s-form-message-field {
+  height: 15em;
+  padding-top: 1em;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-moz-placeholder {
+  color: white;
+}
+
+::-moz-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+.s-form-btn {
+  background-color: white;
+  color: #7e3218;
+  height: 3em;
+}
+
+.s-theme-author {
+  text-decoration: none;
+  color: #fd6632;
+}
+
+.s-theme-author:hover {
+  color: #0b9ce0;
+}

@@ -1,0 +1,14 @@
+/*=== RESET TO INTUITIVE BOX LAYOUT === */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}

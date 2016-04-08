@@ -1,0 +1,101 @@
+/*=== STYLES === */
+body {
+  font-family: "Helvetica", "Arial", Sans-serif;
+  font-weight: 400;
+}
+
+nav {
+  font-family: "Open Sans", "Helvetica", Sans-serif;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+td {
+  background-color: white;
+  color: #2e2e2e;
+  font-size: 1.5em;
+}
+
+article {
+  padding: 2em 1em;
+}
+
+th, td {
+  padding: 0.25em 1em;
+  margin: 0.8em auto;
+}
+
+em {
+  font-style: none;
+}
+
+h2 {
+  width: 100%;
+  display: inline-block;
+}
+
+h2:before, h2:after {
+  content: " ";
+  display: inline-block;
+  border-top: solid 1px white;
+  width: 18%;
+  height: 1px;
+  z-index: 1;
+  position: relative;
+  margin: 0.25em;
+  white-space: nowrap;
+}
+
+.b-white h2:before, .b-white h2:after {
+  border-top: solid 1px black;
+}
+
+.h3-lines {
+  width: 100%;
+  display: inline-block;
+}
+
+.h3-lines:before, .h3-lines:after {
+  content: " ";
+  display: inline-block;
+  border-top: solid 1px white;
+  width: 18%;
+  height: 1px;
+  z-index: 1;
+  position: relative;
+  margin: 0.325em;
+  white-space: nowrap;
+}
+
+.b-white .h3-lines:before, .b-white .h3-lines:after {
+  border-top: solid 1px black;
+}
+
+.s-contact-info a, .s-contact-info a:hover, .s-contact-info a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link {
+  padding-top: 10%;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  padding-top: 2%;
+}
+
+.nav-link a:active {
+  color: #fd6632;
+}
+
+.hero-text-padding {
+  padding: 11em 5% 15em 5%;
+  margin-bottom: -5%;
+}
