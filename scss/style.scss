@@ -1,0 +1,17 @@
+@import "lib/maps-plus";
+
+/* import reset */
+@import "lib/reset";
+
+body {
+  display: flex;
+}
+
+/* base widget-foo */
+@import "generators/widget-foo/widget-foo";
+
+/* extended widget-foo__baz */
+@import "generators/widget-foo__baz/widget-foo__baz";
+
+/* custom widget-foo__bar */
+@import "generators/widget-foo__bar/widget-foo__bar";

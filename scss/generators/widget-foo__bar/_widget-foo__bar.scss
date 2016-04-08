@@ -1,0 +1,16 @@
+@import "../../declarations/widget-foo/widget-foo";
+@import "settings";
+
+.widget-foo__bar {
+  @include widget-foo($widget-foo__bar) {
+    background-color: ghostwhite;
+    padding: 40px;
+    button {
+      margin-bottom: 10px;
+    }
+    .caption {
+      font-size: 12px;
+      color: gray;
+    }
+  };
+}

@@ -1,0 +1,36 @@
+$widget-foo: (
+  container: (
+    margin: 20px,
+    padding-bottom: 20px,
+    border-bottom: 1px solid gray
+  ),
+  heading: (
+    font-size: 2em,
+    line-height: 1.5,
+    color: black
+  ),
+  copy: (
+    font-size: 1em,
+    color: gray,
+    line-height: 1.5,
+    margin: 0 0 1em 0,
+  ),
+  a: (
+    color: red,
+    font-size: 1.5em,
+    text-decoration: none,
+    hover: (
+      text-decoration: underline
+    ),
+  ),
+  button: (
+    padding: 10px 20px,
+    background-color: orange,
+    color: white,
+    font-weight: bold,
+    hover: (
+      cursor: pointer,
+      background-color: pink
+    ),
+  ),
+) !default;

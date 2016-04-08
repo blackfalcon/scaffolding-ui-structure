@@ -1,0 +1,14 @@
+$widget-foo__baz: (
+  button: (
+    padding: 20px,
+    background-color: green,
+    color: white,
+    font-weight: bold,
+    hover: (
+      cursor: pointer,
+      background-color: yellow
+    ),
+  ),
+);
+
+$widget-foo: map-merge-z($widget-foo, $widget-foo__baz);

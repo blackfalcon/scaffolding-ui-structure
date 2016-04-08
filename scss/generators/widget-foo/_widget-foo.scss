@@ -1,0 +1,6 @@
+@import "../../declarations/widget-foo/widget-foo";
+@import "../../declarations/widget-foo/default-settings";
+
+.widget-foo {
+  @include widget-foo($widget-foo);
+}
