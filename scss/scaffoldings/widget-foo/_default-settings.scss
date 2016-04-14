@@ -1,4 +1,11 @@
 $widget-foo: (
+  deprecate: (
+    is-deprecated: (
+      flag: true,
+      warning: 'this scaffolding component set deprecated and scheduled to be removed in version 3.1.',
+    ),
+    is-deactivated: false,
+  ),
   container: (
     margin: 20px,
     padding-bottom: 20px,

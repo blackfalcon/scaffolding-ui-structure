@@ -1,5 +1,4 @@
-@import "../../declarations/widget-foo/widget-foo";
-@import "../../declarations/widget-foo/default-settings";
+@import "scaffoldings/widget-foo/widget-foo";
 
 .widget-foo {
   @include widget-foo($widget-foo);

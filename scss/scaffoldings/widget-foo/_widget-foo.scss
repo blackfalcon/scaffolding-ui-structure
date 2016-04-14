@@ -1,0 +1,47 @@
+@import "lib/mixins/is-deprecated";
+@import "default-settings";
+
+@mixin widget-foo($configs) {
+  // Inserts warning to alert the user of future deprecation
+  @include is-deprecated($configs);
+
+  // Wrapper statement that allows for deactivation from config settings
+  // without having to delete scaffolding from lib
+  @if map-get-z($configs, deprecate, is-deactivated) == false {
+    margin: map-get-z($configs, container, margin);
+    padding-bottom: map-get-z($configs, container, padding-bottom);
+    border-bottom: map-get-z($configs, container, border-bottom);
+
+    // need to create better examples ...
+    // this example is breaking the 1st rule of the manifesto O_O
+    h1 {
+      font-size: map-get-z($configs, heading, font-size);
+      line-height: map-get-z($configs, heading, line-height);
+      color: map-get-z($configs, heading, color);
+    }
+    p {
+      font-size: map-get-z($configs, copy, font-size);
+      color: map-get-z($configs, copy, color);
+      line-height: map-get-z($configs, copy, line-height);
+      margin: map-get-z($configs, copy, margin);
+    }
+    a {
+      color: map-get-z($configs, a, color);
+      font-size: map-get-z($configs, a font-size);
+      text-decoration: map-get-z($configs, a, text-decoration);
+        &:hover {
+          text-decoration: map-get-z($configs, a, hover, text-decoration)
+        }
+    }
+    button {
+      padding: map-get-z($configs, button, padding);
+      background-color: map-get-z($configs, button, background-color);
+      color: map-get-z($configs, button, color);
+      font-weight: map-get-z($configs, button, font-weight);
+      &:hover {
+        cursor: map-get-z($configs, button, hover, cursor);
+        background-color: map-get-z($configs, button, hover, background-color);
+      }
+    }
+  }
+}

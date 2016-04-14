@@ -1,3 +1,5 @@
+// This settings map illustrates a large override of the default opinions of the component UI.
+
 $widget-foo__bar: (
   container: (
     margin: null,
@@ -34,3 +36,5 @@ $widget-foo__bar: (
     ),
   ),
 );
+
+$widget-foo: map-merge-z($widget-foo, $widget-foo__bar);
