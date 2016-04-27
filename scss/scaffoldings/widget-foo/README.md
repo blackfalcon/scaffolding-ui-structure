@@ -13,31 +13,29 @@ The scaffolding mixin defines the scope and initial opinion of the UI component.
 
 ## Deprecation support
 
-Within the scope of the scaffolding mixin, a few things need to be included to address some core functionality.
+Within the scope of the scaffolding mixin, a few things need to be addressed to address functionality.
 
-Deprecation support is added by including the `is-deprecated` mixin
+Deprecation support is added by including the `deprecate-wrapper` mixin:
 
 ```
-@include is-deprecated($configs);
+@include deprecate-wrapper($configs) {
+  ...
+} 
 ```
 
-Deprecation settings are managed within the `default-settings.scss` file associated to the component UI.
+Deprecation settings are managed within the `_default-settings.scss` file associated to the component UI.
 
-* flag: boolean
-* warning: string
+* is-deprecated: string
 
 ```
 deprecate: (
-  is-deprecated: (
-    flag: true,
-    warning: 'this scaffolding component set deprecated and scheduled to be removed in version 3.1.'
-  ),
+  is-deprecated: 'this scaffolding component set deprecated and scheduled to be removed in version 3.1.',
 ),
 ```
 
 ### Deactivation of a component UI
 
-Within the scope of the component UI, wrap all rules with: 
+Within the scope of the component UI, the mixin will wrap all content with: 
 
 ```
 @if map-get-z($configs, deprecate, is-deactivated) == false {

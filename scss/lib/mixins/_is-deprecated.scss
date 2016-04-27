@@ -1,5 +1,8 @@
-@mixin is-deprecated($arg) {
-  @if map-get-z($arg, deprecate, is-deprecated) {
-    @warn map-get-z($arg, deprecate, is-deprecated);
+@mixin deprecate-wrapper($configs) {
+  @if map-get-z($configs, deprecate, is-deactivated) == false {
+    @if map-get-z($configs, deprecate, is-deprecated) {
+      @warn map-get-z($configs, deprecate, is-deprecated);
+    }
+    @content;
   }
 }

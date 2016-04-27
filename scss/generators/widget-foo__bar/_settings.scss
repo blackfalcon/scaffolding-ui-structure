@@ -6,35 +6,6 @@ $widget-foo__bar: (
     padding-bottom: 20px,
     border-bottom: 1px solid gray
   ),
-  heading: (
-    font-size: 4em,
-    line-height: 1.5,
-    color: orange
-  ),
-  copy: (
-    font-size: null,
-    color: null,
-    line-height: 1.5,
-    margin: 0 0 2em 0,
-  ),
-  a: (
-    color: green,
-    font-size: 1.5em,
-    text-decoration: null,
-    hover: (
-      text-decoration: null
-    ),
-  ),
-  button: (
-    padding: 30px,
-    background-color: null,
-    color: null,
-    font-weight: bold,
-    hover: (
-      cursor: pointer,
-      background-color: null
-    ),
-  ),
 );
 
 $widget-foo: map-merge-z($widget-foo, $widget-foo__bar);

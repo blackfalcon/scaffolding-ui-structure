@@ -5,11 +5,4 @@
   @include widget-foo($widget-foo)
   background-color: ghostwhite;
   padding: 40px;
-  button {
-    margin-bottom: 10px;
-  }
-  .caption {
-    font-size: 12px;
-    color: gray;
-  }
 }
