@@ -2,12 +2,13 @@
 @import "default-settings";
 
 @mixin widget-foo($configs) {
-  // Inserts warning to alert the user of future deprecation
-  @include is-deprecated($configs);
 
   // Wrapper statement that allows for deactivation from config settings
   // without having to delete scaffolding from lib
   @if map-get-z($configs, deprecate, is-deactivated) == false {
+    // Inserts warning to alert the user of future deprecation
+    @include is-deprecated($configs);
+
     margin: map-get-z($configs, container, margin);
     padding-bottom: map-get-z($configs, container, padding-bottom);
     border-bottom: map-get-z($configs, container, border-bottom);
