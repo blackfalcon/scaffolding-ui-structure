@@ -48,9 +48,9 @@ Global var concepts like `$border-radius-small` were great ideas at the time, bu
 
 > A developer will look at an existing similar UI in the inspector. Will see `border-radius: 2px;`. Will then look at the selector as written in the Sass to discover that the code is:
 
->```
-border-radius: $border-radius-small;
-```
+> ```
+> border-radius: $border-radius-small;
+> `
 
 What is the value of using `$border-radius-small` over `2px` really? Other then the hypothetical possibility that someday `$border-radius-small` will be updated at the global scope? This is a one-time set var that offers little to the ongoing day-to-day work of building new UI components.
 
