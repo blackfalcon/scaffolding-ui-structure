@@ -6,8 +6,7 @@ This proof of concept is opening the discussion; how to use Sass to construct in
 
 ## The Modular UI Manifesto
 
-1. A scaffolding selector is tied to a specific physical selector and its states, and should not contain other selectors, without them being passed in as param. This ensures modularity.
-1. TBD
+A scaffolding selector is tied to a specific physical selector and its states, and should not contain other selectors, without them being passed in as param. This ensures modularity.
 
 ## Dependency hierarchy
 
@@ -50,7 +49,7 @@ Global var concepts like `$border-radius-small` were great ideas at the time, bu
 
 > ```
 > border-radius: $border-radius-small;
-> `
+> ```
 
 What is the value of using `$border-radius-small` over `2px` really? Other then the hypothetical possibility that someday `$border-radius-small` will be updated at the global scope? This is a one-time set var that offers little to the ongoing day-to-day work of building new UI components.
 
